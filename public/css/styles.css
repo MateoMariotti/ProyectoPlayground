@@ -1,43 +1,83 @@
-*{
+* {
     box-sizing: border-box;
-}
-body {
-    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
-.main-header{
+
+body {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.main-header-top-bar {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    justify-content: space-around;
+}
+
+.search-bar {
+    display: flex;
+    height: 42px;
+    width: 170.5px;
+}
+
+.search-bar input {
+    width: 125px;
+    border-color: #EAC926;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-sizing: content-box;
+}
+
+.search-bar i {
+    color: gray;
+    background-color: white;
+    text-align: center;
+    padding-top: 10px;
+    padding-right: 5px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.main-header {
     background-color: #EAC926;
     width: 100;
     height: 100;
 }
-.logo{
-    width: 200px;
+
+.logo {
+    width: 170px;
 }
-.copy-header{
+
+.copy-header {
     font-weight: 400;
-    text-align: center;
-}
-.search-bar{
-    padding-left: 20px;
+    font-size: 15px;
+    padding-left: 25px;
     padding-bottom: 20px;
+    padding-top: 20px;
 }
-.main-navbar{
+
+.main-navbar {
     display: none;
 }
-.main-navbar ul{
+
+.main-navbar ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
-.main-navbar a{
+
+.main-navbar a {
     text-decoration: none;
     color: #222;
     display: inline-block;
     padding: 5px 0;
     font-size: 17px;
 }
-.hamburguer-button{
+
+.hamburguer-button {
     background-color: #1259c3;
     color: white;
     display: block;
@@ -48,11 +88,13 @@ body {
     font-size: 18px;
     margin: 15px auto;
 }
-.main-banner img{
+
+.main-banner img {
     display: block;
     width: 100%;
     height: 100%;
 }
+
 .titulares {
     font-size: 24px;
     background-color: #ebebeb;
@@ -60,10 +102,8 @@ body {
     padding-top: 1%;
     padding-bottom: 1%;
 }
-.titulares h2{
-    padding-left: 2%;
-}
-.main{
+
+.main {
     width: 100;
     height: 100;
     background-color: #ebebeb;
@@ -71,100 +111,220 @@ body {
     padding-right: 5%;
     padding-bottom: 3%;
 }
-.articles{
+
+.articles {
     display: block;
     background-color: white;
     margin-bottom: 10px;
 }
-.img_articles{
+
+.img_articles {
     height: 100%;
     width: 100%;
 }
-.truck{
+
+.truck {
     border-radius: 50%;
     border: solid 1px #39b54a;
-    width: 3em;
-    height: 3em;
+    width: 30px;
+    height: 30px;
     color: #39b54a;
+    position: absolute;
+    right: 20px;
+    top: 0;
 }
-.div_article_description{
+
+.truck i {
+    color: #39b54a;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+.div_article_description {
+    display: flex;
     border-top: #ebebeb 1px solid;
     padding: 15px;
+    flex-wrap: wrap;
+    position: relative;
+    height: 100px;
 }
+
 .descuentos {
     font-size: 16px;
     color: green;
-    margin:0;
+    margin: 0;
     padding: 0;
+    padding-left: 10px;
 }
-.nombreDeProducto{
+
+.nombreDeProducto {
     font-size: 16px;
-    margin:0;
+    margin: 0;
+    position: absolute;
+    bottom: 20px;
 }
+
 .precios {
     font-size: 18px;
     margin: 0;
 }
+
+.titulares p {
+    padding-left: 10px;
+    color: rgb(53, 51, 51);
+    font-size: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
 .footer {
-background-color: #ebebeb;
-height: 100;
-width: 100;
-display: block;
-text-align: center;
-padding-left: 10%;
-padding-right: 10%;
+    background-color: #ebebeb;
+    height: 100;
+    width: 100;
+    display: block;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
 }
-.footer i{
-    width:2em ;
-    height:2em ;
+
+.footer i {
+    width: 2em;
+    height: 2em;
 }
-.Copyright{
+
+.Copyright {
     size: 5;
     color: grey;
 }
+
+
 @media (min-width: 768px) {
-    .main-header-top-bar{
+    .main-header-top-bar {
         display: flex;
         justify-content: space-between;
+        padding: 40px;
     }
-    .copy-header{
-        max-width: 350px;
+
+    .copy-header {
+        padding: 0;
+    }
+
+    .copy-header {
+        max-width: 300px;
         text-align: right;
     }
-    .hamburguer-button{
+
+    .hamburguer-button {
         display: none;
     }
-    .main-navbar{
+
+    .main-navbar {
         display: flex;
         justify-content: space-between;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 20px;
     }
-    .main-navbar ul{
+
+    .main-navbar ul {
         display: flex;
     }
-    .main-navbar li{
+
+    .main-navbar li {
         margin: 0 5px
     }
-}
-@media (min-width:1200px) {
-    .logo{
+
+    .search-bar input {
+        width: 125px;
+        border-color: #EAC926;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        box-sizing: content-box;
+        height: 20px;
+    }
+
+    .search-bar i {
+        color: black;
+        background-color: white;
+        text-align: center;
+        padding-top: 0;
+        padding-right: 0;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        box-sizing: content-box;
+        height: 22px;
+    }
+
+    .div_i_lupa {
+        border: gray solid 1px;
+        height: 22px;
+    }
+
+    .main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+    }
+
+    .articles {
+        height: 350px;
+        width: 330px;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .img_articles {
+        height: 250px;
         width: 250px;
     }
-    .main-header-top-bar,.main-navbar{
+
+    .titulares_ofertas {
+        width: 500px;
+        height: 50px;
+        justify-content: none;
+        padding-right: 700px;
+    }
+
+    .logo {
+        width: 220px;
+        height: 50px;
+    }
+}
+
+@media (min-width:1200px) {
+    .logo {
+        width: 250px;
+    }
+
+    .main-header-top-bar,
+    .main-navbar {
         max-width: 1200px;
         margin: auto;
     }
-    .copy-header{
+
+    .copy-header {
         max-width: none;
-        font-size: 22px;
+        font-size: 20px;
         font-weight: 400;
     }
-    .main-navbar{
+
+    .main-navbar {
         margin-top: 40px;
     }
-    .main-navbar{
+
+    .main-navbar {
         margin: 0 10px;
     }
-    .main-navbar a{
-        font-size: 19px;
+
+    .main-navbar a {
+        font-size: 17px;
+    }
+    .articles {
+        height: 350px;
+        width: 250px;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .titulares_ofertas{
+        width: 1200px;
     }
 }
