@@ -196,6 +196,42 @@ body {
     size: 5;
     color: grey;
 }
+.create-form{
+    padding: 20px 15px;
+}
+.control-formulario{
+    margin-bottom: 15px
+;
+}.control-formulario label{
+    margin-bottom: 5px;
+    font-style: italic;
+    width: 300px;
+}
+.control{
+    width: 100%;
+    padding: 8px 8px;
+    border-radius: 8px;
+}
+.control_vyc{
+    display: flex;
+}
+.control_vyc label{
+    padding-left: 5px;
+    flex-direction: row-reverse;
+}
+.main_register{
+    background-color: rgb(202, 201, 201);
+}.fechaDeNacimiento{
+    padding-bottom: 20px;
+}.perfil_del_usuario{
+    padding-bottom: 20px;
+}.intereses{
+    padding-bottom: 20px;
+}.control-intereses{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100px;
+}
 
 
 @media (min-width: 768px) {

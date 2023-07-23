@@ -1,11 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/183b312a89.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    
+    <header class="main-header">
+        <div class="main-header-top-bar">
+            <div class="logo">
+                <img src="/images/logo-mercado-liebre.svg">
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder=" Buscar productos,  marcas">
+                <div class="div_i_lupa">
+                    <i class="fa fa-search"></i>
+                </div>
+            </div>
+            <div class="copy-header">
+                <i class="fa-solid fa-hand-holding-dollar"></i>
+                Compra en cuotas y sin tarjeta de credito
+            </div>
+        </div>
+        <a href="" class="hamburguer-button">
+            <i class="fa-solid fa-bars"></i>
+        </a>
+
+        <nav class="main-navbar">
+            <ul class="left-navbar">
+                <li><a href="/ayuda">Ayuda</a></li>
+                <li><a href="/ofertas">Ofertas</a></li>
+                <li><a href="/tiendasOficiales">Tiendas oficiales</a></li>
+                <li><a href="/vender">Vender</a></li>
+            </ul>
+            <ul class="right-navbar">
+                <li><a href="/creaTuCuenta">Crea tu cuenta <i class="fa-solid fa-id-card"></i></a></li>
+                <li><a href="/ingresa">Ingresa <i class="fa-solid fa-right-to-bracket"></i></a></li>
+                <li><a href="/misCompras">Mis compras <i class="fa-solid fa-basket-shopping"></i></a></li>
+            </ul>
+        </nav>
+        <div class="main-banner">
+            <img src="/images/img-home-banner.jpg" class="banner">
+        </div>
+    </header>
+    <main class="main_register">
+        <form action="/registro" method="POST" class="create-form">
+            <div class="control-formulario">
+                <input type="text" name="nombreYapellido" placeholder="Nombre y apellido" class="control">
+            </div>
+            <div class="control-formulario">
+                <input type="text" name="usuario" placeholder="Nombre de usuario" class="control">
+            </div>
+            <div class="fechaDeNacimiento">
+                <h3>Fecha de nacimiento</h3>
+            </div>
+            <div class="control-formulario">
+                <input type="date" name="fecha" class="control">
+            </div>
+            <div class="control-formulario">
+
+                <input type="text" name="domicilio" placeholder="Domicilio" class="control">
+            </div class="control-formulario">
+            <div class="perfil_del_usuario">
+                <h3>Pefil del Usuario</h3>
+            </div>
+            <div class="control_vyc">
+                <div>
+                    <label>Comprador</label>
+                    <input type="radio" name="comprador">
+                </div>
+                <div class="control-formulario">
+                    <label>Vendedor</label>
+                    <input type="radio" name="vendedor">
+                </div>
+            </div>
+                    <div class="intereses">
+                    <h3>Intereses</h3>
+                </div>
+            <div class="control-intereses">
+                <div class="control-formulario">
+                    <label>Electro</label>
+                    <input type="checkbox" name="electro" class="control">
+                </div>
+                <div class="control-formulario">
+                    <label>Moda</label>
+                    <input type="checkbox" name="moda" class="control">
+                </div>
+                <div class="control-formulario">
+                    <label>Hogar</label>
+                    <input type="checkbox" name="hogar" class="control">
+                </div>
+                <div class="control-formulario">
+                    <label>Jugueteria</label>
+                    <input type="checkbox" name="jugueteria" class="control">
+                </div>
+                <div class="control-formulario">
+                    <label>Vida sana</label>
+                    <input type="checkbox" name="vidaSana" class="control">
+                </div>
+            </div>
+        </form>
+    </main>
 </body>
+
 </html>
