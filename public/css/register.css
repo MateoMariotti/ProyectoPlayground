@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main_register{
+    background-color: #ebebeb;
+}
+
+.div_all_form{
+    width: 90%;
+    padding-left: 10%;
+}
+
+.div_text{
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.div_text input{
+    border: none;
+    font-size: 16px;
+    width: 100%;
+    border-radius: 3px;
+}
+
+.div_fecha{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.div_fecha input{
+    width: 100%;
+}
+
+.div_control_cyv{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.div_item_intereses{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+
+
