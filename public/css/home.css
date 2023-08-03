@@ -119,9 +119,15 @@ body {
 }
 
 .articles {
-    display: block;
+    display: flex;
     background-color: white;
     margin-bottom: 10px;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.articles h4 {
+    display: none;
 }
 
 .img_articles {
@@ -147,12 +153,9 @@ body {
 }
 
 .div_article_description {
-    display: flex;
     border-top: #ebebeb 1px solid;
     padding: 15px;
-    flex-wrap: wrap;
     position: relative;
-    height: 100px;
 }
 
 .descuentos {
@@ -161,18 +164,19 @@ body {
     margin: 0;
     padding: 0;
     padding-left: 10px;
+    height: 20px;
 }
 
 .nombreDeProducto {
     font-size: 16px;
     margin: 0;
-    position: absolute;
     bottom: 20px;
 }
 
 .precios {
     font-size: 18px;
     margin: 0;
+    height: 20px;
 }
 
 .titulares p {
@@ -273,14 +277,11 @@ body {
     }
 
     .articles {
-        height: 350px;
-        width: 330px;
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
 
     .img_articles {
         height: 250px;
-        width: 250px;
     }
 
     .titulares_ofertas {
@@ -294,6 +295,18 @@ body {
         width: 220px;
         height: 50px;
     }
+
+    .articles:hover h4 {
+        height: 20px;
+    }
+
+    .div_article_description h4 {
+        display: block;
+        height: 0;
+        overflow: hidden;
+        transition: all 1s ease;
+    }
+
 }
 
 @media (min-width:1200px) {
